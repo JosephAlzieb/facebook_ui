@@ -7,12 +7,12 @@ import 'package:facebook_ui/widgets/profil_avator.dart';
 import 'package:flutter/material.dart';
 
 class Stories extends StatelessWidget {
-  final User? currentUser;
+  final User currentUser;
   final List<Story> stories;
 
   const Stories({
-    required this.currentUser,
-    required this.stories,
+    @required this.currentUser,
+    @required this.stories,
   });
 
   @override
@@ -27,7 +27,7 @@ class Stories extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 4.0),
               child: _StoryCard(
-                currentUser: currentUser!,
+                currentUser: currentUser,
                 isAddStory: true, story: null,
               ),
             );
@@ -36,7 +36,7 @@ class Stories extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4.0),
             child: _StoryCard(
-              story: story, currentUser: currentUser!,
+              story: story, currentUser: null,
             ),
           );
         },
@@ -48,11 +48,11 @@ class Stories extends StatelessWidget {
 class _StoryCard extends StatelessWidget {
   final User currentUser;
   final bool isAddStory;
-  final Story? story;
+  final Story story;
 
   const _StoryCard({
-    required this.currentUser,
-    required this.story,
+    @required this.currentUser,
+    @required this.story,
     this.isAddStory = false,
   });
 
@@ -66,7 +66,7 @@ class _StoryCard extends StatelessWidget {
             height: double.infinity,
             width: 160,
             fit: BoxFit.cover,
-            imageUrl: isAddStory ? currentUser.imageUrl : story!.imageUrl,
+            imageUrl: isAddStory ? currentUser.imageUrl : story.imageUrl,
           ),
         ),
         Positioned(
@@ -88,8 +88,8 @@ class _StoryCard extends StatelessWidget {
                 )
               : Container(
                   child: ProfilAvator(
-                    imageUrl: story!.user.imageUrl,
-                    hasBorder: !story!.isViewed,
+                    imageUrl: story.user.imageUrl,
+                    hasBorder: story.isViewed,
                   ),
                 ),
         ),
@@ -98,7 +98,7 @@ class _StoryCard extends StatelessWidget {
           left: 12.0,
           right: 12.0,
           child: Text(
-            isAddStory ? "Add to Story" : story!.user.name,
+            isAddStory ? "Add to Story" : story.user.name,
             style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

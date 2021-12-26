@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import 'user_model.dart';
 
 class Story {
@@ -6,8 +8,8 @@ class Story {
   final bool isViewed;
 
   const Story({
-    required this.user,
-    required this.imageUrl,
+    @required this.user,
+    @required this.imageUrl,
     this.isViewed = false,
   });
 }

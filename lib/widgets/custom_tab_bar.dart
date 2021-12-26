@@ -7,9 +7,9 @@ class CustomTabBar extends StatelessWidget {
   final Function ontap;
 
   const CustomTabBar({
-    required this.icons,
-    required this.selectedIndex,
-    required this.ontap,
+    @required this.icons,
+    @required this.selectedIndex,
+    @required this.ontap,
   });
 
   @override

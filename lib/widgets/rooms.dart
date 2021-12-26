@@ -64,7 +64,7 @@ class _CreateRoomButton extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30.0),
       ),
-      borderSide: const BorderSide(width: 3.0, color: Colors.blueAccent),// achtung
+      borderSide: BorderSide(width: 3.0, color: Colors.blueAccent[100]),
       textColor: Palette.facebookBlue,
       onPressed: () {},
       child: Row(

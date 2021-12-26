@@ -8,7 +8,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 class PostContainer extends StatelessWidget {
   final Post post;
 
-  PostContainer({required this.post});
+  PostContainer({@required this.post});
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ class PostContainer extends StatelessWidget {
 class _PostHeader extends StatelessWidget {
   final Post post;
 
-  const _PostHeader({required this.post});
+  const _PostHeader({@required this.post});
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +99,7 @@ class _PostHeader extends StatelessWidget {
 class _PostState extends StatelessWidget {
   final Post post;
 
-  _PostState({required this.post});
+  _PostState({@required this.post});
 
   @override
   Widget build(BuildContext context) {
@@ -166,9 +166,9 @@ class _PostButton extends StatelessWidget {
   final IconData icon;
 
   const _PostButton({
-    required this.lable,
-    required this.ontap,
-    required this.icon,
+    @required this.lable,
+    @required this.ontap,
+    @required this.icon,
   });
 
   @override

@@ -9,7 +9,7 @@ class ProfilAvator extends StatelessWidget {
 
 
   const ProfilAvator({
-    required this.imageUrl,
+    @required this.imageUrl,
     this.isActiv = false,
     this.hasBorder = false,
   });
