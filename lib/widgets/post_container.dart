@@ -177,21 +177,23 @@ class _PostButton extends StatelessWidget {
       child: Material(
         color: Colors.white,
         child: InkWell(
-          onTap: ()=>ontap,
+          onTap: ontap,
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
             height: 35.0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  icon,
-                  size: 30.0,
-                  color: Colors.grey[600],
-                ),
-                const SizedBox(width: 4.0),
-                Text(lable, style: TextStyle(fontSize: 18.0, color: Colors.grey[600]),),
-              ],
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    icon,
+                    size: 20.0,
+                    color: Colors.grey[600],
+                  ),
+                  const SizedBox(width: 4.0),
+                  Text(lable, style: TextStyle(fontSize: 12.0, color: Colors.grey[600]),),
+                ],
+              ),
             ),
           ),
         ),
