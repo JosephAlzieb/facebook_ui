@@ -1,18 +1,9 @@
 # facebook_ui
 
-# I tried to create a facebook ui. below you can take some photos of the end-design
+#### just tried to clone the facebook UI
 ____
 
-<img src="https://github.com/JosephAlzieb/facebook_ui/blob/master/photos/1.png" width="320" height="550">
 
-____
-____
-<img src="https://github.com/JosephAlzieb/facebook_ui/blob/master/photos/2.png" width="320" height="550">
 
-____
-____
-<img src="https://github.com/JosephAlzieb/facebook_ui/blob/master/photos/3.png" width="320" height="550">
+https://user-images.githubusercontent.com/63665876/190880013-bed21c35-53a4-4da2-8954-6ee0f070bc9e.mp4
 
-____
-____
-<img src="https://github.com/JosephAlzieb/facebook_ui/blob/master/photos/4.png" width="320" height="550">
